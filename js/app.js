@@ -6,8 +6,8 @@ function disabledButton(){ //deshabilitar, habilitar boton
   }
 }
 
-
-function myFunction() {
+var send=document.getElementById("btn");
+send.onclick=function() { //funcion para enviar mensaje a nuevo parrafo
     var d = new Date();
     var x = document.getElementById("myTextarea").value;//obteniendo valor de textarea
     var element=document.createElement('p');//creando parrafo
@@ -15,24 +15,21 @@ function myFunction() {
     element.appendChild(text); //agregando texto a parrafo
     document.getElementById("demo").appendChild(element); //agregando parrafo a html
     document.getElementById("myTextarea").value="";
+    document.getElementById("myTextarea").style.height='30px';
+    document.getElementById("caracteres").value="140";
+    document.getElementById("caracteres").style.color="#000000"
     disabledButton();
 }
 
 var contTextArea="";
 var limitCar=140;
 
-function maximo(){
-  contTextArea=document.getElementById("myTextarea").value;
-  document.getElementById("caracteres").style.color="#000000";
-  cuenta();
-}
-
-function cuenta(){
-  document.getElementById("caracteres").value=limitCar-(document.getElementById("myTextarea").value.length);
+function limit(){
+  contTextArea=document.getElementById("myTextarea").value; //obtener mensaje
+  document.getElementById("caracteres").style.color="#000000"
+  document.getElementById("caracteres").value=limitCar-(contTextArea.length);
   if(parseInt(document.getElementById("caracteres").value)<1){
     document.getElementById("btn").disabled = true;
-  }else {
-    document.getElementById("btn").disabled = false;
   }
   if(parseInt(document.getElementById("caracteres").value)<=20){
     document.getElementById("caracteres").style.color="orange";
@@ -40,4 +37,17 @@ function cuenta(){
   if(parseInt(document.getElementById("caracteres").value)<=10){
     document.getElementById("caracteres").style.color="red";
   }
+}
+
+var autoajustar=document.getElementById("myTextarea");
+autoajustar.onkeydown=function() {
+    var texto=document.getElementById("myTextarea");
+    var txt=texto.value;
+    var tamano=txt.length;
+    texto.style.height=tamano+"px";
+    if(parseInt(document.getElementById("caracteres").value)<1){
+      document.getElementById("btn").disabled = true;
+    }else {
+      document.getElementById("btn").disabled = false;
+    }
 }

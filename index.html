@@ -8,10 +8,10 @@
   <body onload="disabledButton()">
     <form>
       <div>
-        <textarea id="myTextarea" onkeyup="maximo()" onkeydown="maximo()" onkeypress="disabledButton()"></textarea>
+        <textarea id="myTextarea" onkeyup="limit()" onkeydown="limit()" onkeypress="disabledButton()" style="overflow:hidden" ></textarea>
       </div>
       <div>
-        <button id='btn' type="button" onclick="myFunction()">TWEET</button>
+        <button id='btn' type="button" >TWEET</button>
         <input id='caracteres' type="text" value="140" size=4>
       </div>
     </form>

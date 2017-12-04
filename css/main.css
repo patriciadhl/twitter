@@ -9,3 +9,8 @@ body{
   background: white;
   height: 40px;
 }
+
+#myTextarea{
+
+  resize: none;
+}
