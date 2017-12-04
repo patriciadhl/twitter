@@ -24,8 +24,9 @@ Etiquetado de partes del `<body>`| - | - |
 ### 2. Programación de interacción ###
  En HTML  | En CSS | En JS
 --------- | ------ | ------
-Etiqueta `<nav>` | - | - |
-Creación de listado con `<ul>`y `<li>` | - | - | 
-Creación de `<a>` con su href | - | - |
+| - | - | - | 
+|- | - | - |
 
 ### 3. Sincronización de interacción JS - HTML - CSS ###
+| - | - | - | 
+|- | - | - |
