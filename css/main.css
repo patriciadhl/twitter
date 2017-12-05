@@ -1,16 +1,73 @@
 body{
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  background: #2E9AFE;
+	margin: 0;
+	padding: 0;
+	background-image: url(https://previews.123rf.com/images/transiastock/transiastock1410/transiastock141000018/32327715-Vintage-pineapple-seamless-Stock-Vector.jpg);
 }
-
-#demo > p{
-  background: white;
-  height: 40px;
+section{
+	margin-top: 10%;
+	margin-left: 6%;
+	border: solid #0099cc;
 }
-
-#myTextarea{
-
-  resize: none;
+#nav{
+	background: #0099cc;
+	display: inline-block;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+#section-one{
+	display: inline-block;
+	width: 40%;
+	height: 25%;
+	background: #ffffff;
+	}
+#section-one > .information{
+	display: block;
+	width: 35%;
+	margin: 3%;
+}
+#capitalize{
+	text-transform: capitalize;
+}
+#uppercase{
+	text-transform: uppercase;
+}
+#section-two{
+	display: inline-block;
+	width: 40%;
+	background: #ffffff;
+}
+#btn{
+	text-transform: uppercase;
+	width: 30%;
+	height: 2%;
+	background: #0099cc;
+}
+#section-two > #btn{
+	display: inline-block;
+}
+#section-two > #caracteres{
+	display: inline-block;
+}
+#section-three{
+	display: block;
+	width: 86%;
+	background: #ffffff;
+}
+.twitter{
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Slabo 27px', serif;
+	font-size: 200%;
+}
+.hr{
+	border: solid 1px;
+    color: #a1d0dd;
+    width: 90%;
+}
+.msg{
+	margin: 2%;
+}
+.counter{
+	margin-left: 50%;
 }
