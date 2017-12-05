@@ -69,4 +69,10 @@ En este repositorio se muestra como se creó de forma colaborativa, la funcional
     
 
 ## HTML / CSS ##
-
+En HTML  | En CSS
+-------- | ---------
+ Creación de `<nav>` | Aplicación de `fixed` a `<nav>`
+| Creación de `<section>` conteniendo información del usuario  | - |
+| Creación de segundo `<section>` para conexión con JS donde se crea el mensaje. | Aplicación de estilo a botón. Se recorre el contador a parte inferior derecha.
+| Creación 3° `<section>` unida a JS donde se envía el mensaje escrito. | -
+| Se agregan líneas en HTML para conexión con JS.
